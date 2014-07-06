@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'blocks/header';
 @import 'controls';
 
 @page_width: 1365px;
@@ -7,8 +8,9 @@ html {
   height: 100%;
 }
 body {
-  background: url(../images/bg.png);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ba6c2a url(../images/bg3.png) repeat-y;
+  background-position: center;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #333;
   height: 100% !important;
   position: relative;
@@ -16,8 +18,12 @@ body {
 }
 
 .i-layout {
+  background: #FFFFFF;
+  box-shadow: 0 0 50px rgba(0,0,0,0.6);
   min-height: 100%;
   height: auto !important;
+  margin: 10px auto;
+  width: @page_width;
 }
 
 .clearfix() {
