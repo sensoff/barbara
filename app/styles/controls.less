@@ -1,0 +1,53 @@
+input[type="text"] {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 0px;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'AFuturicaLtThin', sans-serif;
+  height: 40px;
+  padding: 0px;
+  text-indent: 10px;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &.error {
+    outline: 2px solid #f7782a;
+    color: #f7782a;
+  }
+}
+textarea {
+  border: none;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 145px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  padding: 10px 30px 10px 10px;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &.error {
+    outline: 2px solid #f7782a;
+    color: #f7782a;
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
