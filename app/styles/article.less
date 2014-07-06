@@ -1,0 +1,53 @@
+.article {
+  box-sizing: border-box;
+  float: left;
+  font-size: 32px;
+  font-family: 'Antiqua', Arial, Verdana;
+  line-height: 42px;
+  padding: 0 60px;
+  text-align: justify;
+  width: 100%;
+  p {
+    text-indent: 30px;
+    margin-bottom: 30px;
+  }
+  img, .image {
+    &.left {
+      float: left;
+      padding: 30px 60px 30px 0;
+    }
+    &.right {
+      float: right;
+      padding: 30px 0px 30px 60px;
+    }
+  }
+  ol {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding:0; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+    li {
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:0 0 6px 2em; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+      padding:4px 8px;
+      &:before {
+        content:counter(li); /* В качестве данных используем счетчик */
+        counter-increment: li; /* Увеличиваем значение счетчика на 1 */
+        /* Позиционируем и оформляем цифры */
+        position:absolute;
+        top:-2px;
+        left:-2em;
+        width:2em;
+        padding:4px 0;
+        border-top:2px solid #ba6c2a;
+        color:#fff;
+        background:#ba6c2a;
+        font-weight:bold;
+        font-family:"Helvetica Neue", Arial, sans-serif;
+        text-align:center;
+      }
+    }
+  }
+  strong {
+    font-weight: bold;
+  }
+}

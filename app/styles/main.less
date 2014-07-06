@@ -1,7 +1,10 @@
 @import 'reset';
 @import 'blocks/header';
 @import 'blocks/menu';
+@import 'blocks/slider';
+@import 'blocks/about';
 @import 'controls';
+@import 'article';
 
 @page_width: 1365px;
 
@@ -11,7 +14,7 @@ html {
 body {
   background: #ba6c2a url(../images/bg3.png) repeat-y;
   background-position: center;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Myriad Pro', Arial, Verdana;
   color: #333;
   height: 100% !important;
   position: relative;
@@ -36,4 +39,10 @@ body {
   &:after {
     clear: both;
   }
+}
+
+.page-title {
+  color: #00133c;
+  font-size: 55px;
+  line-height: 130px;
 }
